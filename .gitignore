@@ -1,0 +1,10 @@
+/result
+/.direnv
+/target
+node_modules/
+# KiCad
+*-backups/
+fp-info-cache
+*.kicad_prl
+\#auto_saved_files#
+_autosave-*

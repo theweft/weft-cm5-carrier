@@ -1,0 +1,15 @@
+# REUSE (https://reuse.software): licence and copyright for every file in this repository.
+# Hardware design files are CERN-OHL-P-2.0; firmware, scripts and documentation are MIT.
+version = 1
+
+[[annotations]]
+path = "**"
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 The weft authors"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["hardware/**", "mechanical/**"]
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 The weft authors"
+SPDX-License-Identifier = "CERN-OHL-P-2.0"
