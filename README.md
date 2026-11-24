@@ -12,8 +12,10 @@ agent work on the module without a person present. Part of [weft](https://thewef
 - **A supervisor that handles everything a microcontroller can** (RP2350B, one USB-C to the PC):
   - cuts and restores the CM5's power (real power cuts) and measures every rail;
   - drives the boot and control pins in the order the datasheet requires;
-  - reaches all 28 GPIOs individually, for consoles, peripheral emulation, a logic analyser and
+  - reaches all 28 GPIOs individually (3.3 V or 1.8 V bank), for consoles, a logic analyser and
     fault injection;
+  - stands in for missing peripherals (I2C, SPI, UART, PWM, GPIO) with the same chip models weft's
+    simulation uses, so a driver runs against a model on real pins before the real chip arrives;
   - flashes the CM5 over rpiboot or by swapping its SD card to the PC;
   - emulates a monitor and captures the HDMI picture;
   - disconnects Ethernet for network partition tests.
