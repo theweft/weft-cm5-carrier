@@ -6,7 +6,9 @@ A carrier board for the Raspberry Pi Compute Module 5 that exposes every CM5 sig
 agent work on the module without a person present. Part of [weft](https://theweft.org).
 
 - **Every signal reachable:** each of the CM5's 200 pins ends at a labelled header, a test point
-  or its native connector (HDMI, USB 3, M.2, MIPI, Ethernet).
+  or its native connector (HDMI, USB 3, M.2, MIPI, Ethernet). Pogo pins under the module reach
+  its own test points too: the debug UART (boot console), the SoC's JTAG port, RUN and
+  nRESET_OUT. The U.FL antenna goes to a connector on the base.
 - **A supervisor that handles everything a microcontroller can** (RP2350B, one USB-C to the PC):
   - cuts and restores the CM5's power (real power cuts) and measures every rail;
   - drives the boot and control pins in the order the datasheet requires;
