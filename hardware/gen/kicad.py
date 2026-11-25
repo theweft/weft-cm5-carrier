@@ -184,10 +184,9 @@ def write_sheet(sheet, lib, root_uuid, sheet_uuid, path):
     boxes = []
     for part, unit in sheet.items:
         pins = [p for p in lib.pins(part.lib_id) if p[3] in (0, unit) and p[4] in (0, 1)]
-        if not pins:
-            continue
-        xs = [p[5] for p in pins] or [0]
-        ys = [p[6] for p in pins] or [0]
+        # Pinless symbols (mounting holes, fiducials) get a small box of their own.
+        xs = [p[5] for p in pins] or [-2.54, 2.54]
+        ys = [p[6] for p in pins] or [-2.54, 2.54]
         lab = max((len(part.net_of(p[0]) or "") for p in pins), default=4) * 1.0 + 6
         x0, x1 = min(xs) - lab, max(xs) + lab
         y0, y1 = min(ys) - lab * 0.6, max(ys) + lab * 0.6

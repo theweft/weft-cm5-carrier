@@ -35,11 +35,36 @@ def _write_tables(sym_rows, fp_rows):
                 '\t(lib (name "weft")(type "KiCad")(uri "${KIPRJMOD}/../lib/weft.pretty")(options "")(descr "weft parts"))\n'
                 '\t(lib (name "CM5IO")(type "KiCad")(uri "${KIPRJMOD}/../lib/CM5IO.pretty")(options "")(descr "Raspberry Pi CM5 IO Board"))\n'
                 + fp_rows + ')\n')
-    pro = os.path.join(OUT, f"{NAME}.kicad_pro")
-    if not os.path.exists(pro):
-        with open(pro, "w", encoding="utf-8") as f:
-            json.dump({"meta": {"filename": f"{NAME}.kicad_pro", "version": 3},
-                       "sheets": [], "text_variables": {}}, f, indent=2)
+    write_project()
+
+
+# Supply nets of the carrier: wider tracks (the router reads these from the net classes).
+SUPPLY_CLASSES = {
+    "Supply_0.6": (0.6, ["VBUS_IN", "VBUS_SHUNT", "+5V_CM5", "USBA3_VBUS", "USBA4_VBUS"]),
+    "Supply_0.4": (0.4, ["SUP_5V", "SUP_3V3", "ESP_3V3", "VBUS_LAB", "+3V3_CM5", "+1V1_SUP", "GND"]),
+    "Supply_0.3": (0.3, ["+1V8_CM5", "GPIO_VREF", "VBAT", "VBAT_CELL"]),
+}
+
+
+def write_project():
+    """The project file carries the design rules: the IO Board's (0.125 mm clearance, 0.45 mm vias,
+    its impedance classes for HDMI, USB 3, MIPI and Ethernet), with patterns for renamed nets."""
+    pro = json.load(open(os.path.join(HERE, "..", "base", "CM5IO.kicad_pro"), encoding="utf-8"))
+    pro["meta"]["filename"] = f"{NAME}.kicad_pro"
+    pro["sheets"] = []
+    pro.pop("boards", None)
+    ns = pro["net_settings"]
+    for pat in ns.get("netclass_patterns", []):
+        pat["pattern"] = pat["pattern"].rsplit("/", 1)[-1]
+    default = next(c for c in ns["classes"] if c["name"] == "Default")
+    for name, (width, nets) in SUPPLY_CLASSES.items():
+        cls = dict(default, name=name, track_width=width)
+        ns["classes"] = [c for c in ns["classes"] if c["name"] != name] + [cls]
+        ns["netclass_patterns"] += [{"netclass": name, "pattern": n} for n in nets]
+    ns.pop("netclass_assignments", None)
+    with open(os.path.join(OUT, f"{NAME}.kicad_pro"), "w", encoding="utf-8") as f:
+        json.dump(pro, f, indent=2)
+        f.write("\n")
 
 
 def main():

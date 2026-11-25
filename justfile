@@ -24,6 +24,7 @@ schematic:
 place: schematic
     kicad-cli sch export netlist --format kicadsexpr -o target/carrier.net hardware/kicad/weft-cm5-carrier.kicad_sch
     python3 hardware/gen/pcb.py target/carrier.net target/placed.kicad_pcb
+    cp hardware/kicad/weft-cm5-carrier.kicad_pro target/placed.kicad_pro
 
 # Routes the placed PCB with Freerouting into hardware/kicad (takes a while).
 route passes="30": place

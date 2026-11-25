@@ -418,7 +418,18 @@ def headers(c, module):
                 footprint="Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical")
     for i, net in enumerate(sd):
         j2[str(i + 1)] = net
-    # Power flags: these nets are driven from outside the schematic's view (connectors, module).
+    # M2.5 mounting holes in the extension, the same footprint as the IO Board's eight, so the
+    # whole board takes one screw size (base plate and cover, docs/22 §4). Clear of the headers,
+    # the USB-A ports and the ESP32, whose courtyard includes its antenna clearance (x > 314.9,
+    # y > 122).
+    for x, y in ((345.5, 84.0), (345.5, 112.0), (300.0, 84.0), (311.75, 156.5)):
+        c.part("Mechanical:MountingHole", "MountingHole", prefix="H",
+               footprint="CM5IO:MountingHole_2.7mm_M2.5_DIN965", Near=f"{x},{y},0")
+    # Three global fiducials for assembly (the IO Board has none), not in a line. The assembler's
+    # edge rails carry the tooling holes. Two go into free space near the IO Board's corners.
+    for near in ("82.5,75", "84,146", "346.5,79.5,0"):
+        c.part("Mechanical:Fiducial", "Fiducial", prefix="FID", footprint="Fiducial:Fiducial_1mm_Mask2mm",
+               Near=near)
     # Nets driven from outside the schematic's view (connectors) or by passive parts.
     flagged = ["VBUS_IN", "VBUS_LAB", "VBAT_CELL", "SUP_5V", "VBUS_SHUNT", "SUP_VREG_AVDD", "+1V1_SUP",
                "M2_3v3"] + [f"LSF_REFB{k}" for k in range(1, 7)]

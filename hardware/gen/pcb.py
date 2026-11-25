@@ -41,6 +41,10 @@ REGIONS = {  # block -> (x0, y0, x1, y1) in the extension
     "ESP32": (318.0, 132.0, 347.0, 158.0),
     "Headers": (241.0, 71.0, 347.0, 82.0),
 }
+# Areas the 5 V power path needs (power_path): connector to shunt, shunt and eFuse, and the
+# output pour with its via cluster.
+POWER_PATH = [(243.5, 146.0, 258.5, 156.0), (252.5, 135.5, 258.5, 149.5), (255.5, 129.5, 264.0, 138.5)]
+
 FIXED = {  # ref -> (x, y, rotation, layer-flip)
     "J11": (247.5, 157.5, 0),  # power USB-C, moved from the IO Board position
     "J301": (262.0, 157.5, 0),  # lab USB-C
@@ -203,24 +207,99 @@ def power_path(board, fps):
                                          max(j_in[2], s_in[2]) + 0.5, j_in[3] + 0.3))
     out = (pin6[0] - 0.05, pin6[1] - 6.0, pin6[0] + 7.0, pin6[1] + 0.2)
     zone(board, "+5V_CM5", pcbnew.F_Cu, out)
-    for layer in (pcbnew.In2_Cu, pcbnew.B_Cu):
-        zone(board, "+5V_CM5", layer, (out[0] + 2.0, out[1], out[2], out[3] - 1.5))
+    zone(board, "+5V_CM5", pcbnew.B_Cu, (out[0] + 2.0, out[1], out[2], out[3] - 1.5))
+    # Inner layer 2: one zone from the via cluster to the IO Board's 5 V copper.
     for i in range(4):
         for j in range(3):
             via(board, "+5V_CM5", out[0] + 2.8 + i * 1.1, out[1] + 0.8 + j * 1.1)
     # Inner layer 2 from the eFuse to the IO Board's 5 V copper.
-    corridor = (197.0, 128.5, out[2], out[1] + 4.0)
+    corridor = (197.0, 128.5, out[2], max(out[1] + 4.0, out[3] - 1.5))
     zone(board, "+5V_CM5", pcbnew.In2_Cu, corridor)
+    # ... and under the IO Board's B.Cu 5 V zone (x 184..205, y 130..153), where the vias go.
+    zone(board, "+5V_CM5", pcbnew.In2_Cu, (184.5, 128.5, 205.0, 152.5), priority=11)
     blocked = copper_rects(board, "+5V_CM5")
+    # Existing vias of any net, for drill-to-drill spacing.
+    for t in board.GetTracks():
+        if t.Type() == pcbnew.PCB_VIA_T:
+            x, y = pcbnew.ToMM(t.GetPosition().x), pcbnew.ToMM(t.GetPosition().y)
+            blocked.append((x - 0.4, y - 0.4, x + 0.4, y + 0.4))
     count = 0
-    for i in range(12):
-        for j in range(8):
-            x, y = 198.5 + i * 0.8, 128.8 + j * 0.8
+    for i in range(26):
+        for j in range(29):
+            x, y = 185.0 + i * 0.8, 130.5 + j * 0.8
             if all(x + 0.55 <= a or x - 0.55 >= c or y + 0.55 <= b or y - 0.55 >= d for a, b, c, d in blocked):
                 via(board, "+5V_CM5", x, y)
                 blocked.append((x - 0.3, y - 0.3, x + 0.3, y + 0.3))
                 count += 1
     print(f"power path: {count} vias into the IO Board's 5 V copper")
+    if count < 10:
+        raise SystemExit("power path: fewer than 10 vias into the IO Board's 5 V copper; check the layout")
+
+
+def improve(board, fps, auto, moves=int(os.environ.get("ANNEAL_MOVES", "600000"))):
+    """Simulated annealing over the automatically placed parts (anneal.py)."""
+    import anneal
+
+    auto_set = set(auto)
+    region = (EXT[0], 78.5, EXT[2], EXT[3])  # the extension below the front headers
+    parts = []
+    for ref in auto:
+        fp = fps[ref]
+        x0, y0 = pcbnew.ToMM(fp.GetPosition().x), pcbnew.ToMM(fp.GetPosition().y)
+        rot0 = fp.GetOrientationDegrees()
+        shapes = {}
+        for rot in (0, 90, 180, 270):
+            fp.SetOrientationDegrees(rot)
+            fp.SetPosition(pcbnew.VECTOR2I(0, 0))
+            pads = [(p.GetNetname(), pcbnew.ToMM(p.GetPosition().x), pcbnew.ToMM(p.GetPosition().y))
+                    for p in fp.Pads() if p.GetNetname()]
+            shapes[rot] = (bbox_mm(fp), pads)
+        fp.SetOrientationDegrees(rot0)
+        fp.SetPosition(pcbnew.VECTOR2I(MM(x0), MM(y0)))
+        many = fp.GetPadCount() > 4
+        parts.append(anneal.Part(ref, shapes, region, x0, y0, int(round(rot0)) % 360, fp.GetFPIDAsString(),
+                                 margin=1.0 if many else 0.3))
+    fixed_pads, obstacles = [], []
+    for ref, fp in fps.items():
+        if ref in auto_set:
+            continue
+        for p in fp.Pads():
+            if p.GetNetname():
+                fixed_pads.append((p.GetNetname(), pcbnew.ToMM(p.GetPosition().x), pcbnew.ToMM(p.GetPosition().y)))
+        x0, y0, x1, y1 = bbox_mm(fp)
+        if x1 > region[0]:
+            obstacles.append((x0 - 0.25, y0 - 0.25, x1 + 0.25, y1 + 0.25))
+    obstacles.extend(POWER_PATH)
+    # Decoupling: a capacitor between a supply and ground is pulled to the closest chip pin of
+    # that supply, as placed by the greedy pass.
+    by_ref = {p.ref: p for p in parts}
+    chips = [p for p in parts if len(p.shapes[0][1]) > 4]
+    decaps = {}
+    for p in parts:
+        nets = {n for n, _, _ in p.shapes[0][1]}
+        if len(p.shapes[0][1]) == 2 and "GND" in nets and len(nets) == 2:
+            (supply,) = nets - {"GND"}
+            best = None
+            for c in chips:
+                for n, x, y in c.pads():
+                    if n == supply:
+                        d = abs(x - p.x) + abs(y - p.y)
+                        if best is None or d < best[0]:
+                            best = (d, c.ref)
+            for n, x, y in fixed_pads:
+                if n == supply and x > region[0]:
+                    d = abs(x - p.x) + abs(y - p.y)
+                    if best is None or d < best[0]:
+                        best = (d, (x, y))
+            if best:
+                t = best[1]
+                decaps[p.ref] = [(t, 0.0, 0.0)] if isinstance(t, str) else [(None, t[0], t[1])]
+    anneal.anneal(parts, fixed_pads, obstacles, decaps, moves=moves)
+    for p in parts:
+        fp = fps[p.ref]
+        fp.SetOrientationDegrees(p.rot)
+        fp.SetPosition(pcbnew.VECTOR2I(MM(p.x), MM(p.y)))
+    del by_ref
 
 
 def main(netlist, out):
@@ -292,9 +371,14 @@ def main(netlist, out):
         if c is None:
             continue
         fp.SetPath(pcbnew.KIID_PATH(c["path"]))
+        symbol_pins = {p for p in c["pins"]}
         for pad in fp.Pads():
             name = c["pins"].get(pad.GetNumber())
-            pad.SetNet(net(board, name) if name else board.FindNet("") or pcbnew.NETINFO_ITEM(board, ""))
+            if name:
+                pad.SetNet(net(board, name))
+            elif pad.GetNumber() in symbol_pins or not old.get((ref, pad.GetNumber())):
+                pad.SetNetCode(0)
+            # else: a mechanical pad the symbol has no pin for (shield, mounting): keeps its net
 
     # 4. Outline.
     for d in list(board.GetDrawings()):
@@ -383,7 +467,8 @@ def main(netlist, out):
     placed = set(FIXED)
     # The M.2 card covers this area: keep it free.
     space.add((209.0, Y0, 239.5, Y1))
-    space.add((243.5, 128.5, 264.0, 156.0))  # the 5 V power path (power_path below)
+    for r in POWER_PATH:  # the 5 V power path (power_path below)
+        space.add(r)
     # Placement hints from the circuit: "x,y[,rotation]" is fixed, a reference means "next to".
     local = {}
     for ref in new:
@@ -433,6 +518,10 @@ def main(netlist, out):
             space.rects[-1] = tuple(v + d for v, d in zip(space.rects[-1], (-0.5, -0.5, 0.5, 0.5)))
         placed.add(ref)
 
+    # 6b. Improve the automatic part of the placement by simulated annealing.
+    auto = [r for r in order if r not in local and not comps[r]["near"] and r not in FIXED]
+    improve(board, fps, auto)
+
     power_path(board, fps)
 
     # 7. Ground zones over the extension on all four layers.
@@ -444,7 +533,7 @@ def main(netlist, out):
         ol.NewOutline()
         for x, y in ((238.5, Y0 + 0.5), (X1 - 0.5, Y0 + 0.5), (X1 - 0.5, Y1 - 0.5), (238.5, Y1 - 0.5)):
             ol.Append(MM(x), MM(y))
-        z.SetAssignedPriority(0)
+        z.SetAssignedPriority(1)  # overlaps the IO Board's GND zones (priority 0) at the seam
         z.SetMinThickness(MM(0.2))
         z.SetLocalClearance(MM(0.25))
         z.SetPadConnection(pcbnew.ZONE_CONNECTION_THERMAL)

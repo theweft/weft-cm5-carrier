@@ -3,7 +3,7 @@
 	(generator "weft-cm5-carrier")
 	(generator_version "9.0")
 	(uuid "6b533fc1-2beb-586e-8a2b-4da0465d4143")
-	(paper "User" 420 297)
+	(paper "User" 469.7 297)
 	(title_block
 		(title "Headers for every CM5 pin")
 		(company "The weft authors")
@@ -1950,6 +1950,201 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:Fiducial"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
@@ -3616,32 +3811,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 144.78 38.1 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 143.51 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d36e3a1b-9419-5e8d-a73a-bb2ef5af61f7")
-		(property "Reference" "#FLG701"
-			(at 144.78 35.1 0)
+		(uuid "7c42e138-0b09-53ae-ba7b-06bf9a553732")
+		(property "Reference" "H701"
+			(at 143.51 35.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 144.78 41.1 0)
+		(property "Value" "MountingHole"
+			(at 143.51 41.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 144.78 38.1 0)
+		(property "Footprint" "CM5IO:MountingHole_2.7mm_M2.5_DIN965"
+			(at 143.51 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3650,7 +3845,434 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 38.1 0)
+			(at 143.51 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Near" "345.5,84.0,0"
+			(at 143.51 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "weft-cm5-carrier"
+				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
+					(reference "H701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 176.53 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "beddb703-7719-5b83-9643-b4e00e95d060")
+		(property "Reference" "H702"
+			(at 176.53 35.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 176.53 41.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CM5IO:MountingHole_2.7mm_M2.5_DIN965"
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Near" "345.5,112.0,0"
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "weft-cm5-carrier"
+				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
+					(reference "H702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 209.55 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4c4832d-af9a-5ea3-be37-c08080c3999c")
+		(property "Reference" "H703"
+			(at 209.55 35.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 209.55 41.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CM5IO:MountingHole_2.7mm_M2.5_DIN965"
+			(at 209.55 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Near" "300.0,84.0,0"
+			(at 209.55 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "weft-cm5-carrier"
+				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
+					(reference "H703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 242.57 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31ad1589-d904-5603-95ce-3793e341cfe4")
+		(property "Reference" "H704"
+			(at 242.57 35.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 242.57 41.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CM5IO:MountingHole_2.7mm_M2.5_DIN965"
+			(at 242.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Near" "311.75,156.5,0"
+			(at 242.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "weft-cm5-carrier"
+				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
+					(reference "H704")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 276.86 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "197bf56e-05ee-5ef7-bf82-e560e3dc333e")
+		(property "Reference" "FID701"
+			(at 276.86 35.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 276.86 41.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 276.86 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Near" "82.5,75"
+			(at 276.86 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "weft-cm5-carrier"
+				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
+					(reference "FID701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 309.88 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a48cd055-c0cf-51b8-a4d2-6bca7e7726f4")
+		(property "Reference" "FID702"
+			(at 309.88 35.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 309.88 41.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 309.88 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Near" "84,146"
+			(at 309.88 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "weft-cm5-carrier"
+				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
+					(reference "FID702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 342.9 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2bad904f-a86a-554a-8e68-a6ff53215379")
+		(property "Reference" "FID703"
+			(at 342.9 35.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 342.9 41.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 342.9 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 342.9 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Near" "346.5,79.5,0"
+			(at 342.9 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "weft-cm5-carrier"
+				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
+					(reference "FID703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 375.92 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d36e3a1b-9419-5e8d-a73a-bb2ef5af61f7")
+		(property "Reference" "#FLG701"
+			(at 375.92 35.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 375.92 41.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375.92 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3672,7 +4294,7 @@
 	)
 	(global_label "VBUS_IN"
 		(shape passive)
-		(at 144.78 38.1 270)
+		(at 375.92 38.1 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3682,7 +4304,7 @@
 		)
 		(uuid "8f92b29c-3add-5e68-b5cf-8390ebc64b94")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.78 38.1 0)
+			(at 375.92 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,7 +4315,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 179.07 38.1 0)
+		(at 411.48 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3701,7 +4323,7 @@
 		(dnp no)
 		(uuid "e146bbb8-bf5b-59f0-bea8-98eefda1d110")
 		(property "Reference" "#FLG702"
-			(at 179.07 35.1 0)
+			(at 411.48 35.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3709,7 +4331,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 179.07 41.1 0)
+			(at 411.48 41.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,7 +4339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 38.1 0)
+			(at 411.48 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3726,7 +4348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 38.1 0)
+			(at 411.48 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3748,7 +4370,7 @@
 	)
 	(global_label "VBUS_LAB"
 		(shape passive)
-		(at 179.07 38.1 270)
+		(at 411.48 38.1 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3758,7 +4380,7 @@
 		)
 		(uuid "74c6a01e-d27d-5960-8631-bec8edc4f607")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.07 38.1 0)
+			(at 411.48 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,7 +4391,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 215.9 39.37 0)
+		(at 35.56 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3777,7 +4399,7 @@
 		(dnp no)
 		(uuid "19b1551a-7518-5c11-ac82-5d2cd0ab0180")
 		(property "Reference" "#FLG703"
-			(at 215.9 36.37 0)
+			(at 35.56 118.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3785,7 +4407,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 215.9 42.37 0)
+			(at 35.56 124.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3793,7 +4415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 39.37 0)
+			(at 35.56 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,7 +4424,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 39.37 0)
+			(at 35.56 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3824,7 +4446,7 @@
 	)
 	(global_label "VBAT_CELL"
 		(shape passive)
-		(at 215.9 39.37 270)
+		(at 35.56 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3834,7 +4456,7 @@
 		)
 		(uuid "e8efd702-f9b0-55db-8e09-ea6142ae1e6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.9 39.37 0)
+			(at 35.56 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3845,7 +4467,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 251.46 36.83 0)
+		(at 69.85 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3853,7 +4475,7 @@
 		(dnp no)
 		(uuid "46c7827a-ae0c-5be6-8dbb-1df08b90d831")
 		(property "Reference" "#FLG704"
-			(at 251.46 33.83 0)
+			(at 69.85 117.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3861,7 +4483,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 251.46 39.83 0)
+			(at 69.85 123.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3869,7 +4491,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 36.83 0)
+			(at 69.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3878,7 +4500,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 36.83 0)
+			(at 69.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3900,7 +4522,7 @@
 	)
 	(global_label "SUP_5V"
 		(shape passive)
-		(at 251.46 36.83 270)
+		(at 69.85 120.65 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3910,7 +4532,7 @@
 		)
 		(uuid "2db9abb7-833c-5118-a7ec-eea6cf89e96d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.46 36.83 0)
+			(at 69.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3921,7 +4543,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 287.02 39.37 0)
+		(at 105.41 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3929,7 +4551,7 @@
 		(dnp no)
 		(uuid "278152ef-d51c-5815-ae90-89576808e1b4")
 		(property "Reference" "#FLG705"
-			(at 287.02 36.37 0)
+			(at 105.41 120.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3937,7 +4559,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 287.02 42.37 0)
+			(at 105.41 126.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3945,7 +4567,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 287.02 39.37 0)
+			(at 105.41 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3954,7 +4576,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 287.02 39.37 0)
+			(at 105.41 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3976,7 +4598,7 @@
 	)
 	(global_label "VBUS_SHUNT"
 		(shape passive)
-		(at 287.02 39.37 270)
+		(at 105.41 123.19 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3986,7 +4608,7 @@
 		)
 		(uuid "5eb397d1-2f5d-58b1-9abb-b32e3124731e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 287.02 39.37 0)
+			(at 105.41 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3997,7 +4619,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 330.2 41.91 0)
+		(at 148.59 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4005,7 +4627,7 @@
 		(dnp no)
 		(uuid "eca2a5f0-c555-552c-9854-62fcc34677fb")
 		(property "Reference" "#FLG706"
-			(at 330.2 38.91 0)
+			(at 148.59 121.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4013,7 +4635,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 330.2 44.91 0)
+			(at 148.59 127.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,7 +4643,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 330.2 41.91 0)
+			(at 148.59 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,7 +4652,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 330.2 41.91 0)
+			(at 148.59 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4052,7 +4674,7 @@
 	)
 	(global_label "SUP_VREG_AVDD"
 		(shape passive)
-		(at 330.2 41.91 270)
+		(at 148.59 124.46 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4062,7 +4684,7 @@
 		)
 		(uuid "647e8546-a433-53d9-a43e-dec9626c6680")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 330.2 41.91 0)
+			(at 148.59 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4073,7 +4695,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 370.84 38.1 0)
+		(at 190.5 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4081,7 +4703,7 @@
 		(dnp no)
 		(uuid "2cb11ff8-2ed1-5f91-802f-102c6c6e8419")
 		(property "Reference" "#FLG707"
-			(at 370.84 35.1 0)
+			(at 190.5 118.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4089,7 +4711,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 370.84 41.1 0)
+			(at 190.5 124.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,7 +4719,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 370.84 38.1 0)
+			(at 190.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,7 +4728,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 38.1 0)
+			(at 190.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4128,7 +4750,7 @@
 	)
 	(global_label "+1V1_SUP"
 		(shape passive)
-		(at 370.84 38.1 270)
+		(at 190.5 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4138,7 +4760,7 @@
 		)
 		(uuid "8733b769-d4ec-5d96-8d34-24f7fd49e2ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 370.84 38.1 0)
+			(at 190.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4149,7 +4771,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 31.75 120.65 0)
+		(at 223.52 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4157,7 +4779,7 @@
 		(dnp no)
 		(uuid "fcb4cacc-6a37-5c88-a657-b28ca8a4b87d")
 		(property "Reference" "#FLG708"
-			(at 31.75 117.65 0)
+			(at 223.52 117.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4165,7 +4787,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 31.75 123.65 0)
+			(at 223.52 123.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4173,7 +4795,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 120.65 0)
+			(at 223.52 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4182,7 +4804,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 120.65 0)
+			(at 223.52 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4204,7 +4826,7 @@
 	)
 	(global_label "M2_3v3"
 		(shape passive)
-		(at 31.75 120.65 270)
+		(at 223.52 120.65 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4214,7 +4836,7 @@
 		)
 		(uuid "6cfa7a0e-c18b-5b03-9d08-3ce796e46cf2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 31.75 120.65 0)
+			(at 223.52 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4225,7 +4847,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 67.31 121.92 0)
+		(at 259.08 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4233,7 +4855,7 @@
 		(dnp no)
 		(uuid "9e1586c5-a49c-5f8d-b0f9-51e274b596bf")
 		(property "Reference" "#FLG709"
-			(at 67.31 118.92 0)
+			(at 259.08 118.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4241,7 +4863,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 67.31 124.92 0)
+			(at 259.08 124.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4249,7 +4871,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 121.92 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4258,7 +4880,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 121.92 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4280,7 +4902,7 @@
 	)
 	(global_label "LSF_REFB1"
 		(shape passive)
-		(at 67.31 121.92 270)
+		(at 259.08 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4290,7 +4912,7 @@
 		)
 		(uuid "296427f9-c46b-5cc9-9aa8-bb92bc97959e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.31 121.92 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,7 +4923,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 105.41 121.92 0)
+		(at 297.18 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4309,7 +4931,7 @@
 		(dnp no)
 		(uuid "cdd4e4e8-fd7a-5f2b-9772-8c018c0d114e")
 		(property "Reference" "#FLG710"
-			(at 105.41 118.92 0)
+			(at 297.18 118.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4317,7 +4939,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 105.41 124.92 0)
+			(at 297.18 124.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4325,7 +4947,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 121.92 0)
+			(at 297.18 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,7 +4956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 121.92 0)
+			(at 297.18 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4356,7 +4978,7 @@
 	)
 	(global_label "LSF_REFB2"
 		(shape passive)
-		(at 105.41 121.92 270)
+		(at 297.18 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4366,7 +4988,7 @@
 		)
 		(uuid "ccd6ac39-8bcb-5d2a-8b76-bb71d12b5d92")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.41 121.92 0)
+			(at 297.18 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4377,7 +4999,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 143.51 121.92 0)
+		(at 335.28 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4385,7 +5007,7 @@
 		(dnp no)
 		(uuid "ae2bc219-e551-5d27-a5ac-e10c0673346b")
 		(property "Reference" "#FLG711"
-			(at 143.51 118.92 0)
+			(at 335.28 118.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4393,7 +5015,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 143.51 124.92 0)
+			(at 335.28 124.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4401,7 +5023,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 121.92 0)
+			(at 335.28 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4410,7 +5032,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 121.92 0)
+			(at 335.28 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4432,7 +5054,7 @@
 	)
 	(global_label "LSF_REFB3"
 		(shape passive)
-		(at 143.51 121.92 270)
+		(at 335.28 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4442,7 +5064,7 @@
 		)
 		(uuid "4785e8d9-b963-5ef6-9eb0-e10688400072")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.51 121.92 0)
+			(at 335.28 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4453,7 +5075,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 181.61 121.92 0)
+		(at 373.38 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4461,7 +5083,7 @@
 		(dnp no)
 		(uuid "e4e08d3c-b546-5a5c-b9ad-570f6fff4ac4")
 		(property "Reference" "#FLG712"
-			(at 181.61 118.92 0)
+			(at 373.38 118.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4469,7 +5091,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 181.61 124.92 0)
+			(at 373.38 124.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4477,7 +5099,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 121.92 0)
+			(at 373.38 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4486,7 +5108,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 121.92 0)
+			(at 373.38 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4508,7 +5130,7 @@
 	)
 	(global_label "LSF_REFB4"
 		(shape passive)
-		(at 181.61 121.92 270)
+		(at 373.38 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4518,7 +5140,7 @@
 		)
 		(uuid "bedb9b7f-9fd3-561f-a6a9-7a09570926dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.61 121.92 0)
+			(at 373.38 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,7 +5151,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 218.44 121.92 0)
+		(at 411.48 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4537,7 +5159,7 @@
 		(dnp no)
 		(uuid "fcc68f20-4b18-592f-b04a-91a9cc51cf32")
 		(property "Reference" "#FLG713"
-			(at 218.44 118.92 0)
+			(at 411.48 118.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4545,7 +5167,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 218.44 124.92 0)
+			(at 411.48 124.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4553,7 +5175,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 121.92 0)
+			(at 411.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4562,7 +5184,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 121.92 0)
+			(at 411.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4584,7 +5206,7 @@
 	)
 	(global_label "LSF_REFB5"
 		(shape passive)
-		(at 218.44 121.92 270)
+		(at 411.48 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4594,7 +5216,7 @@
 		)
 		(uuid "81f332a2-d682-58ce-b934-a1a09509580c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.44 121.92 0)
+			(at 411.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +5227,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 256.54 121.92 0)
+		(at 35.56 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4613,7 +5235,7 @@
 		(dnp no)
 		(uuid "785a8781-d18b-56b5-9966-56f0946364e6")
 		(property "Reference" "#FLG714"
-			(at 256.54 118.92 0)
+			(at 35.56 151.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,7 +5243,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 256.54 124.92 0)
+			(at 35.56 157.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4629,7 +5251,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 121.92 0)
+			(at 35.56 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4638,7 +5260,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 121.92 0)
+			(at 35.56 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4660,7 +5282,7 @@
 	)
 	(global_label "LSF_REFB6"
 		(shape passive)
-		(at 256.54 121.92 270)
+		(at 35.56 154.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4670,7 +5292,7 @@
 		)
 		(uuid "cddbbdae-2800-50aa-aa2e-6923581e45bf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.54 121.92 0)
+			(at 35.56 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
