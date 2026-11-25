@@ -1,0 +1,11 @@
+Raspberry Pi design files
+
+Raspberry Pi Ltd publishes the design files of the Compute Module 5 IO Board (KiCad, revision 2):
+https://pip-assets.raspberrypi.com/categories/1098-design-files/documents/RP-008099-DD-1-CM5%20IO%20Board,%20revision%202,%20KiCAD%20files..zip
+
+The archive carries no licence file. Raspberry Pi's licensing page
+(https://www.raspberrypi.com/licensing/) grants, for the design files it hosts, "permission to
+use, copy, modify, and/or distribute these designs for any purpose". Third-party parts in the
+archive (its 3D models) remain under their makers' terms and are not included in this repository.
+
+The authoritative terms are those on Raspberry Pi's licensing page; check it before redistributing.

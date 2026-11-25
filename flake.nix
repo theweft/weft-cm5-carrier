@@ -21,7 +21,16 @@
             pkgs.just
             pkgs.typos
             pkgs.reuse
+            pkgs.kicad-small
+            pkgs.freerouting
+            pkgs.python3
           ];
+          # KiCad's library paths and its Python module (pcbnew), taken from the kicad-cli
+          # wrapper so the generator and the PCB scripts see the same KiCad as kicad-cli.
+          shellHook = ''
+            eval "$(sed -n "s/^export \\(KICAD10_[A-Z0-9]*_DIR\\)=\''${[A-Z0-9_]*-'\\(.*\\)'}$/export \\1='\\2'/p" ${pkgs.kicad-small}/bin/kicad-cli)"
+            export PYTHONPATH="$(sed -n "s/^export PYTHONPATH='\\(.*\\)'$/\\1/p" ${pkgs.kicad-small}/bin/kicad-cli)"
+          '';
         };
       });
     };

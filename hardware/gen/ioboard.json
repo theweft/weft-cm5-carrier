@@ -1,0 +1,1451 @@
+{
+ "BT1": {
+  "fields": {
+   "MPN": "3034",
+   "Manufacturer": "Keystone"
+  },
+  "footprint": "CM5IO:BatteryHolder_Keystone_3034_1x20mm",
+  "lib_id": "Device:Battery_Cell",
+  "pins": {
+   "1": "VBAT",
+   "2": "GND"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "Battery_Cell"
+ },
+ "C1": {
+  "fields": {
+   "MPN": "RM EMK105 B7104KV-F",
+   "Manufacturer": "TAIYO YUDEN EUROPE GMBH"
+  },
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "IO_C1_Pad1",
+   "2": "GND"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "100n"
+ },
+ "C10": {
+  "fields": {
+   "MPN": "RM EMK105 B7104KV-F",
+   "Manufacturer": "TAIYO YUDEN EUROPE GMBH"
+  },
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "100n"
+ },
+ "C11": {
+  "fields": {},
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "M2_3v3",
+   "2": "FB"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "4.7nF"
+ },
+ "C12": {
+  "fields": {
+   "MPN": "RM EMK105 B7104KV-F",
+   "Manufacturer": "TAIYO YUDEN EUROPE GMBH"
+  },
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "100n"
+ },
+ "C13": {
+  "fields": {
+   "MPN": "RM EMK105 B7104KV-F",
+   "Manufacturer": "TAIYO YUDEN EUROPE GMBH"
+  },
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "HDMI_5v",
+   "2": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "100n"
+ },
+ "C14": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "M2_3v3",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "10u"
+ },
+ "C15": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "M2_3v3",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "10u"
+ },
+ "C16": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "M2_3v3",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "10u"
+ },
+ "C17": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "M2_3v3",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "10u"
+ },
+ "C18": {
+  "fields": {
+   "MPN": "RM EMK105 B7104KV-F",
+   "Manufacturer": "TAIYO YUDEN EUROPE GMBH"
+  },
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND"
+  },
+  "sheet": "/",
+  "value": "100n"
+ },
+ "C19": {
+  "fields": {
+   "MPN": "RM EMK105 B7104KV-F",
+   "Manufacturer": "TAIYO YUDEN EUROPE GMBH"
+  },
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "M2_3v3",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "100n"
+ },
+ "C2": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "10u"
+ },
+ "C3": {
+  "fields": {
+   "Manufacturer": "Panasonic"
+  },
+  "footprint": "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D",
+  "lib_id": "Device:C_Polarized",
+  "pins": {
+   "1": "VBUS",
+   "2": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "100uF"
+ },
+ "C4": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "10u"
+ },
+ "C5": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "SD_PWR",
+   "2": "GND"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "10u"
+ },
+ "C6": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "10u"
+ },
+ "C7": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "VBUS",
+   "2": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "10u"
+ },
+ "C8": {
+  "fields": {
+   "MPN": "GRM21BR71A106KA73L",
+   "Manufacturer": "Murata"
+  },
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "VBUS",
+   "2": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "10u"
+ },
+ "C9": {
+  "fields": {
+   "MPN": "RM EMK105 B7104KV-F",
+   "Manufacturer": "TAIYO YUDEN EUROPE GMBH"
+  },
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "lib_id": "Device:C",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND"
+  },
+  "sheet": "/",
+  "value": "100n"
+ },
+ "D1": {
+  "fields": {
+   "MPN": "SML-A12U8TT86Q",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "LED_SMD:LED_0603_1608Metric",
+  "lib_id": ":LED_1",
+  "pins": {
+   "1": "IO_D1_K",
+   "2": "+3V3_CM5"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "LED Red"
+ },
+ "D2": {
+  "fields": {
+   "MPN": "SML-A12M8TT86N",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "LED_SMD:LED_0603_1608Metric",
+  "lib_id": "Device:LED",
+  "pins": {
+   "1": "IO_D2_K",
+   "2": "+3V3_CM5"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "LED Green"
+ },
+ "D3": {
+  "fields": {
+   "MPN": "SML-A12M8TT86N",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "LED_SMD:LED_0603_1608Metric",
+  "lib_id": "Device:LED",
+  "pins": {
+   "1": "IO_D3_K",
+   "2": "M2_3v3"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "LED Green"
+ },
+ "H1": {
+  "fields": {},
+  "footprint": "CM5IO:MountingHole_2.7mm_M2.5_DIN965",
+  "lib_id": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "/",
+  "value": "MountingHole"
+ },
+ "H2": {
+  "fields": {},
+  "footprint": "CM5IO:MountingHole_2.7mm_M2.5_DIN965",
+  "lib_id": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "/",
+  "value": "MountingHole"
+ },
+ "H3": {
+  "fields": {},
+  "footprint": "CM5IO:MountingHole_2.7mm_M2.5_DIN965",
+  "lib_id": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "/",
+  "value": "MountingHole"
+ },
+ "H4": {
+  "fields": {},
+  "footprint": "CM5IO:MountingHole_2.7mm_M2.5_DIN965",
+  "lib_id": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "/",
+  "value": "MountingHole"
+ },
+ "H5": {
+  "fields": {},
+  "footprint": "CM5IO:MountingHole_2.7mm_M2.5_DIN965",
+  "lib_id": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "/",
+  "value": "MountingHole"
+ },
+ "H6": {
+  "fields": {},
+  "footprint": "CM5IO:MountingHole_2.7mm_M2.5_DIN965",
+  "lib_id": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "/",
+  "value": "MountingHole"
+ },
+ "H7": {
+  "fields": {},
+  "footprint": "CM5IO:MountingHole_2.7mm_M2.5_DIN965",
+  "lib_id": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "/",
+  "value": "MountingHole"
+ },
+ "H8": {
+  "fields": {},
+  "footprint": "CM5IO:MountingHole_2.7mm_M2.5_DIN965",
+  "lib_id": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "/",
+  "value": "MountingHole"
+ },
+ "J10": {
+  "fields": {
+   "MPN": "690-019-298-412",
+   "Manufacturer": "EDAC"
+  },
+  "footprint": "CM5IO:EDAC 690-019-298-412",
+  "lib_id": "CM5IO:HDMI_A_1.4",
+  "pins": {
+   "1": "HDMI1_D2_P",
+   "10": "HDMI1_CK_P",
+   "11": "GND",
+   "12": "HDMI1_CK_N",
+   "13": "HDMI1_CEC",
+   "15": "HDMI1_SCL",
+   "16": "HDMI1_SDA",
+   "17": "GND",
+   "18": "HDMI_5v",
+   "19": "HDMI1_HOTPLUG",
+   "2": "GND",
+   "3": "HDMI1_D2_N",
+   "4": "HDMI1_D1_P",
+   "5": "GND",
+   "6": "HDMI1_D1_N",
+   "7": "HDMI1_D0_P",
+   "8": "GND",
+   "9": "HDMI1_D0_N",
+   "SH1": "GND",
+   "SH2": "GND",
+   "SH3": "GND",
+   "SH4": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "690-019-298-412"
+ },
+ "J11": {
+  "fields": {
+   "MPN": "USBF31-0171",
+   "Manufacturer": "MTCONN"
+  },
+  "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+  "lib_id": "Connector:USB_C_Receptacle_USB2.0_16P",
+  "pins": {
+   "A1": "GND",
+   "A12": "GND",
+   "A4": "+5V_CM5",
+   "A5": "CC1",
+   "A6": "USB2_P",
+   "A7": "USB2_N",
+   "A9": "+5V_CM5",
+   "B1": "GND",
+   "B12": "GND",
+   "B4": "+5V_CM5",
+   "B5": "CC2",
+   "B6": "USB2_P",
+   "B7": "USB2_N",
+   "B9": "+5V_CM5",
+   "S1": "GND"
+  },
+  "sheet": "/",
+  "value": "USB_C_Receptacle_USB2.0"
+ },
+ "J12": {
+  "fields": {
+   "MPN": "UBAF30-D2011",
+   "Manufacturer": "Mtconn"
+  },
+  "footprint": "CM5IO:MTCONN_UBAF30-D2011",
+  "lib_id": "CM5IO:USB3_A",
+  "pins": {
+   "10": "GND",
+   "A1": "VBUS",
+   "A2": "USB3-0-D_N",
+   "A3": "USB3-0-D_P",
+   "A4": "GND",
+   "A5": "USB3-0-RX_P",
+   "A6": "USB3-0-RX_N",
+   "A7": "GND",
+   "A8": "USB3-0-TX_P",
+   "A9": "USB3-0-TX_N",
+   "B1": "VBUS",
+   "B2": "USB3-1-D_N",
+   "B3": "USB3-1-D_P",
+   "B4": "GND",
+   "B5": "USB3-1-RX_P",
+   "B6": "USB3-1-RX_N",
+   "B7": "GND",
+   "B8": "USB3-1-TX_P",
+   "B9": "USB3-1-TX_N"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "USB3_A"
+ },
+ "J14": {
+  "fields": {
+   "MPN": "SHBM04B-SRSS-TB",
+   "Manufacturer": "JST"
+  },
+  "footprint": "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical",
+  "lib_id": "Connector_Generic:Conn_01x04",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "PWM",
+   "3": "GND",
+   "4": "TACHO"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "JST_SHBM04B-SRSS-TB"
+ },
+ "J16": {
+  "fields": {
+   "MPN": "FH12-22S-0.5SH55",
+   "Manufacturer": "Hirose"
+  },
+  "footprint": "CM5IO:Hirose_FH12-22S-0.5SH_1x22-1MP_P0.50mm_Horizontal",
+  "lib_id": "Connector:Conn_01x22_Socket",
+  "pins": {
+   "1": "GND",
+   "10": "GND",
+   "11": "DPHY1_D2_N",
+   "12": "DPHY1_D2_P",
+   "13": "GND",
+   "14": "DPHY1_D3_N",
+   "15": "DPHY1_D3_P",
+   "16": "GND",
+   "17": "IO_J16_Pin_17",
+   "19": "GND",
+   "2": "DPHY1_D0_N",
+   "20": "SCL1",
+   "21": "SDA1",
+   "22": "+3V3_CM5",
+   "3": "DPHY1_D0_P",
+   "4": "GND",
+   "5": "DPHY1_D1_N",
+   "6": "DPHY1_D1_P",
+   "7": "GND",
+   "8": "DPHY1_C_N",
+   "9": "DPHY1_C_P"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "Conn_01x22_Female"
+ },
+ "J2": {
+  "fields": {
+   "MPN": "THD-07-R",
+   "Manufacturer": "Toby"
+  },
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical",
+  "lib_id": "Connector_Generic:Conn_02x07_Odd_Even",
+  "pins": {
+   "1": "GND",
+   "10": "USBOTG",
+   "11": "GND",
+   "12": "PMIC_ENABLE",
+   "13": "GND",
+   "14": "PWR_BUT",
+   "2": "nRPIBOOT",
+   "3": "GND",
+   "4": "EEPROM_nWP",
+   "5": "GND",
+   "6": "SYNC_OUT",
+   "7": "GND",
+   "9": "GND"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "Conn_02x07_Odd_Even"
+ },
+ "J22": {
+  "fields": {
+   "MPN": "690-019-298-412",
+   "Manufacturer": "EDAC"
+  },
+  "footprint": "CM5IO:EDAC 690-019-298-412",
+  "lib_id": "CM5IO:HDMI_A_1.4",
+  "pins": {
+   "1": "HDMI0_D2_P",
+   "10": "HDMI0_CK_P",
+   "11": "GND",
+   "12": "HDMI0_CK_N",
+   "13": "HDMI0_CEC",
+   "15": "HDMI0_SCL",
+   "16": "HDMI0_SDA",
+   "17": "GND",
+   "18": "HDMI_5v",
+   "19": "HDMI0_HOTPLUG",
+   "2": "GND",
+   "3": "HDMI0_D2_N",
+   "4": "HDMI0_D1_P",
+   "5": "GND",
+   "6": "HDMI0_D1_N",
+   "7": "HDMI0_D0_P",
+   "8": "GND",
+   "9": "HDMI0_D0_N",
+   "SH1": "GND",
+   "SH2": "GND",
+   "SH3": "GND",
+   "SH4": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "690-019-298-412"
+ },
+ "J3": {
+  "fields": {},
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+  "lib_id": "Connector_Generic:Conn_01x03",
+  "pins": {
+   "1": "WL_nDis",
+   "2": "GND",
+   "3": "BT_nDis"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "Conn_01x03"
+ },
+ "J4": {
+  "fields": {
+   "MPN": "MTSSD03-67MSW337",
+   "Manufacturer": "MTCONN"
+  },
+  "footprint": "CM5IO:M.2 M Key socket",
+  "lib_id": "CM5IO:Bus_M.2_Socket_M",
+  "pins": {
+   "1": "GND",
+   "10": "IO_J4_DAS_nDSS_nLED1",
+   "12": "M2_3v3",
+   "14": "M2_3v3",
+   "15": "GND",
+   "16": "M2_3v3",
+   "18": "M2_3v3",
+   "2": "M2_3v3",
+   "21": "GND",
+   "27": "GND",
+   "3": "GND",
+   "33": "GND",
+   "39": "GND",
+   "4": "M2_3v3",
+   "41": "PCIE_RX_P",
+   "43": "PCIE_RX_N",
+   "45": "GND",
+   "47": "PCIE_TX_P",
+   "49": "PCIE_TX_N",
+   "50": "PCIE_nRST",
+   "51": "GND",
+   "52": "PCIE_nCLKREQ",
+   "53": "PCIE_CLK_N",
+   "54": "PCIE_nWAKE",
+   "55": "PCIE_CLK_P",
+   "57": "GND",
+   "68": "IO_J4_SUSCLK",
+   "70": "M2_3v3",
+   "71": "GND",
+   "72": "M2_3v3",
+   "73": "GND",
+   "74": "M2_3v3",
+   "75": "GND",
+   "9": "GND",
+   "M1": "GND",
+   "M2": "GND",
+   "M3": "GND",
+   "M4": "GND",
+   "S1": "GND",
+   "S2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "Bus_M.2_Socket_M"
+ },
+ "J5": {
+  "fields": {
+   "MPN": "FH12-22S-0.5SH55",
+   "Manufacturer": "Hirose"
+  },
+  "footprint": "CM5IO:Hirose_FH12-22S-0.5SH_1x22-1MP_P0.50mm_Horizontal",
+  "lib_id": "Connector:Conn_01x22_Socket",
+  "pins": {
+   "1": "GND",
+   "10": "GND",
+   "11": "DPHY0_D2_N",
+   "12": "DPHY0_D2_P",
+   "13": "GND",
+   "14": "DPHY0_D3_N",
+   "15": "DPHY0_D3_P",
+   "16": "GND",
+   "17": "CAM_GPIO0",
+   "18": "CAM_GPIO1",
+   "19": "GND",
+   "2": "DPHY0_D0_N",
+   "20": "SCL0",
+   "21": "SDA0",
+   "22": "+3V3_CM5",
+   "3": "DPHY0_D0_P",
+   "4": "GND",
+   "5": "DPHY0_D1_N",
+   "6": "DPHY0_D1_P",
+   "7": "GND",
+   "8": "DPHY0_C_N",
+   "9": "DPHY0_C_P"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "Conn_01x22_Female"
+ },
+ "J6": {
+  "fields": {
+   "MPN": "151-604-425-761",
+   "Manufacturer": "EDAC"
+  },
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical",
+  "lib_id": "Connector_Generic:Conn_02x02_Odd_Even",
+  "pins": {
+   "1": "ID_SC",
+   "2": "SCL1",
+   "3": "ID_SD",
+   "4": "SDA1"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "THD-02-R"
+ },
+ "J7": {
+  "fields": {
+   "MPN": "503398-1892",
+   "Manufacturer": "Molex"
+  },
+  "footprint": "CM5IO:SDCARD_MOLEX_503398-1892",
+  "lib_id": "Connector:Micro_SD_Card_Det2",
+  "pins": {
+   "1": "SD_DAT2",
+   "11": "GND",
+   "2": "SD_DAT3",
+   "3": "SD_CMD",
+   "4": "SD_PWR",
+   "5": "SD_CLK",
+   "6": "GND",
+   "7": "SD_DAT0",
+   "8": "SD_DAT1"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "Micro_SD_Card_Det"
+ },
+ "J8": {
+  "fields": {
+   "MPN": "THD-20-R",
+   "Manufacturer": "Toby"
+  },
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical",
+  "lib_id": "Connector_Generic:Conn_02x20_Odd_Even",
+  "pins": {
+   "1": "+3V3_CM5",
+   "10": "GPIO15",
+   "11": "GPIO17",
+   "12": "GPIO18",
+   "13": "GPIO27",
+   "14": "GND",
+   "15": "GPIO22",
+   "16": "GPIO23",
+   "17": "+3V3_CM5",
+   "18": "GPIO24",
+   "19": "GPIO10",
+   "2": "+5V_CM5",
+   "20": "GND",
+   "21": "GPIO9",
+   "22": "GPIO25",
+   "23": "GPIO11",
+   "24": "GPIO8",
+   "25": "GND",
+   "26": "GPIO7",
+   "27": "ID_SD",
+   "28": "ID_SC",
+   "29": "GPIO5",
+   "3": "GPIO2",
+   "30": "GND",
+   "31": "GPIO6",
+   "32": "GPIO12",
+   "33": "GPIO13",
+   "34": "GND",
+   "35": "GPIO19",
+   "36": "GPIO16",
+   "37": "GPIO26",
+   "38": "GPIO20",
+   "39": "GND",
+   "4": "+5V_CM5",
+   "40": "GPIO21",
+   "5": "GPIO3",
+   "6": "GND",
+   "7": "GPIO4",
+   "8": "GPIO14",
+   "9": "GND"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "THD-20-R"
+ },
+ "J9": {
+  "fields": {
+   "MPN": "151-604-425-761",
+   "Manufacturer": "EDAC"
+  },
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical",
+  "lib_id": "Connector_Generic:Conn_02x02_Odd_Even",
+  "pins": {
+   "1": "TR1_TAP",
+   "2": "TR2_TAP",
+   "3": "TR0_TAP",
+   "4": "TR3_TAP"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "THD-02-R"
+ },
+ "L1": {
+  "fields": {
+   "MPN": "SRP5030CC-2R2M",
+   "Manufacturer": "Bourns"
+  },
+  "footprint": "CM5IO:L_Bourns_SRP5030CC",
+  "lib_id": "Device:L",
+  "pins": {
+   "1": "IO_U8_LX",
+   "2": "M2_3v3"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "2.2uH"
+ },
+ "Module1": {
+  "fields": {
+   "MPN": "2x 10164227-1001A1RLF",
+   "Manufacturer": "Hirose"
+  },
+  "footprint": "CM5IO:Raspberry-Pi-5-Compute-Module",
+  "lib_id": "CM5IO:ComputeModule5-CM5",
+  "pins": {
+   "1": "GND",
+   "10": "TRD0_N",
+   "100": "CAM_GPIO1",
+   "101": "USBOTG",
+   "102": "PCIE_nCLKREQ",
+   "103": "USB2_N",
+   "104": "PCIE_nWAKE",
+   "105": "USB2_P",
+   "106": "PCIE_PWR_EN",
+   "107": "GND",
+   "108": "GND",
+   "109": "PCIE_nRST",
+   "11": "TRD2_P",
+   "110": "PCIE_CLK_P",
+   "111": "VBUS_EN",
+   "112": "PCIE_CLK_N",
+   "113": "GND",
+   "114": "GND",
+   "115": "DPHY0_D0_N",
+   "116": "PCIE_RX_P",
+   "117": "DPHY0_D0_P",
+   "118": "PCIE_RX_N",
+   "119": "GND",
+   "12": "TRD0_P",
+   "120": "GND",
+   "121": "DPHY0_D1_N",
+   "122": "PCIE_TX_P",
+   "123": "DPHY0_D1_P",
+   "124": "PCIE_TX_N",
+   "125": "GND",
+   "126": "GND",
+   "127": "DPHY0_C_N",
+   "128": "USB3-0-RX_N",
+   "129": "DPHY0_C_P",
+   "13": "GND",
+   "130": "USB3-0-RX_P",
+   "131": "GND",
+   "132": "GND",
+   "133": "DPHY0_D2_N",
+   "134": "USB3-0-D_P",
+   "135": "DPHY0_D2_P",
+   "136": "USB3-0-D_N",
+   "137": "GND",
+   "138": "GND",
+   "139": "DPHY0_D3_N",
+   "14": "GND",
+   "140": "USB3-0-TX_N",
+   "141": "DPHY0_D3_P",
+   "142": "USB3-0-TX_P",
+   "143": "HDMI1_HOTPLUG",
+   "144": "GND",
+   "145": "HDMI1_SDA",
+   "146": "HDMI1_D2_P",
+   "147": "HDMI1_SCL",
+   "148": "HDMI1_D2_N",
+   "149": "HDMI1_CEC",
+   "15": "ETH_LEDY",
+   "150": "GND",
+   "151": "HDMI0_CEC",
+   "152": "HDMI1_D1_P",
+   "153": "HDMI0_HOTPLUG",
+   "154": "HDMI1_D1_N",
+   "155": "GND",
+   "156": "GND",
+   "157": "USB3-1-RX_N",
+   "158": "HDMI1_D0_P",
+   "159": "USB3-1-RX_P",
+   "16": "TACHO",
+   "160": "HDMI1_D0_N",
+   "161": "GND",
+   "162": "GND",
+   "163": "USB3-1-D_P",
+   "164": "HDMI1_CK_P",
+   "165": "USB3-1-D_N",
+   "166": "HDMI1_CK_N",
+   "167": "GND",
+   "168": "GND",
+   "169": "USB3-1-TX_N",
+   "17": "ETH_LEDG",
+   "170": "HDMI0_D2_P",
+   "171": "USB3-1-TX_P",
+   "172": "HDMI0_D2_N",
+   "173": "GND",
+   "174": "GND",
+   "175": "DPHY1_D0_N",
+   "176": "HDMI0_D1_P",
+   "177": "DPHY1_D0_P",
+   "178": "HDMI0_D1_N",
+   "179": "GND",
+   "18": "SYNC_OUT",
+   "180": "GND",
+   "181": "DPHY1_D1_N",
+   "182": "HDMI0_D0_P",
+   "183": "DPHY1_D1_P",
+   "184": "HDMI0_D0_N",
+   "185": "GND",
+   "186": "GND",
+   "187": "DPHY1_C_N",
+   "188": "HDMI0_CK_P",
+   "189": "DPHY1_C_P",
+   "19": "PWM",
+   "190": "HDMI0_CK_N",
+   "191": "GND",
+   "192": "GND",
+   "193": "DPHY1_D2_N",
+   "194": "DPHY1_D3_N",
+   "195": "DPHY1_D2_P",
+   "196": "DPHY1_D3_P",
+   "197": "GND",
+   "198": "GND",
+   "199": "HDMI0_SDA",
+   "2": "GND",
+   "20": "EEPROM_nWP",
+   "200": "HDMI0_SCL",
+   "21": "IO_Module1A_LED_nACT",
+   "22": "GND",
+   "23": "GND",
+   "24": "GPIO26",
+   "25": "GPIO21",
+   "26": "GPIO19",
+   "27": "GPIO20",
+   "28": "GPIO13",
+   "29": "GPIO16",
+   "3": "TRD3_P",
+   "30": "GPIO6",
+   "31": "GPIO12",
+   "32": "GND",
+   "33": "GND",
+   "34": "GPIO5",
+   "35": "ID_SC",
+   "36": "ID_SD",
+   "37": "GPIO7",
+   "38": "GPIO11",
+   "39": "GPIO8",
+   "4": "TRD1_P",
+   "40": "GPIO9",
+   "41": "GPIO25",
+   "42": "GND",
+   "43": "GND",
+   "44": "GPIO10",
+   "45": "GPIO24",
+   "46": "GPIO22",
+   "47": "GPIO23",
+   "48": "GPIO27",
+   "49": "GPIO18",
+   "5": "TRD3_N",
+   "50": "GPIO17",
+   "51": "GPIO15",
+   "52": "GND",
+   "53": "GND",
+   "54": "GPIO4",
+   "55": "GPIO14",
+   "56": "GPIO3",
+   "57": "SD_CLK",
+   "58": "GPIO2",
+   "59": "GND",
+   "6": "TRD1_N",
+   "60": "GND",
+   "61": "SD_DAT3",
+   "62": "SD_CMD",
+   "63": "SD_DAT0",
+   "65": "GND",
+   "66": "GND",
+   "67": "SD_DAT1",
+   "69": "SD_DAT2",
+   "7": "GND",
+   "71": "GND",
+   "74": "GND",
+   "75": "SD_PWR_ON",
+   "76": "VBAT",
+   "77": "+5V_CM5",
+   "78": "GPIO_VREF",
+   "79": "+5V_CM5",
+   "8": "GND",
+   "80": "SCL0",
+   "81": "+5V_CM5",
+   "82": "SDA0",
+   "83": "+5V_CM5",
+   "84": "+3V3_CM5",
+   "85": "+5V_CM5",
+   "86": "+3V3_CM5",
+   "87": "+5V_CM5",
+   "88": "+1V8_CM5",
+   "89": "WL_nDis",
+   "9": "TRD2_N",
+   "90": "+1V8_CM5",
+   "91": "BT_nDis",
+   "92": "PWR_BUT",
+   "93": "nRPIBOOT",
+   "94": "CC1",
+   "95": "nPWR_LED",
+   "96": "CC2",
+   "97": "CAM_GPIO0",
+   "98": "GND",
+   "99": "PMIC_ENABLE"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "ComputeModule5-CM5"
+ },
+ "R1": {
+  "fields": {
+   "MPN": "RK73H1ETTP1001F",
+   "Manufacturer": "KOA EUROPE GMBH"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "IO_D2_K",
+   "2": "IO_Module1A_LED_nACT"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "1k"
+ },
+ "R10": {
+  "fields": {
+   "MPN": "RK73H1ETTP1001F",
+   "Manufacturer": "KOA EUROPE GMBH"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "IO_D1_K",
+   "2": "nPWR_LED"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "1k"
+ },
+ "R11": {
+  "fields": {
+   "MPN": "MCR01MZPF1002",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "+3V3_CM5",
+   "2": "PWM"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "10K 1%"
+ },
+ "R12": {
+  "fields": {
+   "MPN": "MCR01MZPF1502",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "IO_U6_ILIM",
+   "2": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "15K 1%"
+ },
+ "R13": {
+  "fields": {
+   "MPN": "MCR01MZPF1002",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "+3V3_CM5",
+   "2": "SD_PWR_ON"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "10K 1%"
+ },
+ "R14": {
+  "fields": {
+   "MPN": "MCR01MZPF1003",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "PCIE_PWR_EN",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "100K 1%"
+ },
+ "R15": {
+  "fields": {
+   "MPN": "MCR01MZPF1002",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "M2_3v3",
+   "2": "FB"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "10K 1%"
+ },
+ "R16": {
+  "fields": {},
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "FB",
+   "2": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "2.2K 1%"
+ },
+ "R17": {
+  "fields": {
+   "MPN": "RK73H1ETTP1001F",
+   "Manufacturer": "KOA EUROPE GMBH"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "IO_D3_K",
+   "2": "IO_J4_DAS_nDSS_nLED1"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "1k"
+ },
+ "R2": {
+  "fields": {
+   "MPN": "RK73G1ETQTP4700D",
+   "Manufacturer": "KOA EUROPE GMBH"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "IO_U3_LEDY_K",
+   "2": "ETH_LEDG"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "470R"
+ },
+ "R3": {
+  "fields": {
+   "MPN": "RK73G1ETQTP4700D",
+   "Manufacturer": "KOA EUROPE GMBH"
+  },
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "IO_U3_LEDG_K",
+   "2": "ETH_LEDY"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "470R"
+ },
+ "R4": {
+  "fields": {},
+  "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "+1V8_CM5",
+   "2": "GPIO_VREF"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "nf"
+ },
+ "R5": {
+  "fields": {
+   "MPN": "MCR10EZPJ000",
+   "Manufacturer": "Rohm"
+  },
+  "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "+3V3_CM5",
+   "2": "GPIO_VREF"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "0R"
+ },
+ "R6": {
+  "fields": {},
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "GPIO_VREF",
+   "2": "SDA1"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "2.2K 1%"
+ },
+ "R7": {
+  "fields": {},
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "GPIO_VREF",
+   "2": "SCL1"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "2.2K 1%"
+ },
+ "R8": {
+  "fields": {},
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "+3V3_CM5",
+   "2": "IO_J16_Pin_17"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "2.2K 1%"
+ },
+ "R9": {
+  "fields": {},
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "lib_id": "Device:R",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND"
+  },
+  "sheet": "/",
+  "value": "2.2K 1%"
+ },
+ "SW1": {
+  "fields": {
+   "MPN": "PTS645VH58-2LFS",
+   "Manufacturer": "CK"
+  },
+  "footprint": "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS",
+  "lib_id": "Switch:SW_Push",
+  "pins": {
+   "1": "PWR_BUT",
+   "2": "GND"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "Right angle Tact button"
+ },
+ "TP1": {
+  "fields": {},
+  "footprint": "TestPoint:TestPoint_Pad_2.0x2.0mm",
+  "lib_id": "Connector:TestPoint",
+  "pins": {
+   "1": "IO_D3_K"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "TestPoint"
+ },
+ "TP2": {
+  "fields": {},
+  "footprint": "TestPoint:TestPoint_Pad_2.0x2.0mm",
+  "lib_id": "Connector:TestPoint",
+  "pins": {
+   "1": "PWM"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "TestPoint"
+ },
+ "TP3": {
+  "fields": {},
+  "footprint": "TestPoint:TestPoint_Pad_2.0x2.0mm",
+  "lib_id": "Connector:TestPoint",
+  "pins": {
+   "1": "IO_D2_K"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "TestPoint"
+ },
+ "TP4": {
+  "fields": {},
+  "footprint": "TestPoint:TestPoint_Pad_2.0x2.0mm",
+  "lib_id": "Connector:TestPoint",
+  "pins": {
+   "1": "TACHO"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "TestPoint"
+ },
+ "TP5": {
+  "fields": {},
+  "footprint": "TestPoint:TestPoint_Pad_2.0x2.0mm",
+  "lib_id": "Connector:TestPoint",
+  "pins": {
+   "1": "IO_D1_K"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "TestPoint"
+ },
+ "U1": {
+  "fields": {
+   "MPN": "CDDFN10-3324P-13",
+   "Manufacturer": "Bourns"
+  },
+  "footprint": "Package_SON:USON-10_2.5x1.0mm_P0.5mm",
+  "lib_id": "CM5IO:TPD4EUSB30",
+  "pins": {
+   "1": "TRD3_P",
+   "10": "TRD3_P",
+   "2": "TRD3_N",
+   "3": "GND",
+   "4": "TRD2_N",
+   "5": "TRD2_P",
+   "6": "TRD2_P",
+   "7": "TRD2_N",
+   "8": "GND",
+   "9": "TRD3_N"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "TPD4EUSB30"
+ },
+ "U12": {
+  "fields": {
+   "MPN": "RT9742SNGV",
+   "Manufacturer": "RichTek"
+  },
+  "footprint": "Package_TO_SOT_SMD:TSOT-23_HandSoldering",
+  "lib_id": "CM5IO:RT9742SNGV",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "HDMI_5v",
+   "3": "GND"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "RT9742SNGV"
+ },
+ "U18": {
+  "fields": {
+   "MPN": "RT9742GGJ5",
+   "Manufacturer": "RichTek"
+  },
+  "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+  "lib_id": "CM5IO:RT9742GGJ5",
+  "pins": {
+   "1": "SD_PWR",
+   "2": "GND",
+   "4": "SD_PWR_ON",
+   "5": "+3V3_CM5"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "RT9742GGJ5"
+ },
+ "U2": {
+  "fields": {
+   "MPN": "CDDFN10-3324P-13",
+   "Manufacturer": "Bourns"
+  },
+  "footprint": "Package_SON:USON-10_2.5x1.0mm_P0.5mm",
+  "lib_id": "CM5IO:TPD4EUSB30",
+  "pins": {
+   "1": "TRD1_P",
+   "10": "TRD1_P",
+   "2": "TRD1_N",
+   "3": "GND",
+   "4": "TRD0_N",
+   "5": "TRD0_P",
+   "6": "TRD0_P",
+   "7": "TRD0_N",
+   "8": "GND",
+   "9": "TRD1_N"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "TPD4EUSB30"
+ },
+ "U3": {
+  "fields": {
+   "MPN": "TRJG0926HENL",
+   "Manufacturer": "Trxcon"
+  },
+  "footprint": "CM5IO:TRJG0926HENL",
+  "lib_id": "CM5IO:MagJack-A70-112-331N126",
+  "pins": {
+   "1": "TRD0_P",
+   "10": "TRD3_N",
+   "11": "TR0_TAP",
+   "12": "TR1_TAP",
+   "13": "TR2_TAP",
+   "14": "TR3_TAP",
+   "15": "+3V3_CM5",
+   "16": "IO_U3_LEDY_K",
+   "17": "+3V3_CM5",
+   "18": "IO_U3_LEDG_K",
+   "19": "GND",
+   "2": "TRD0_N",
+   "20": "GND",
+   "3": "TRD1_P",
+   "4": "IO_C1_Pad1",
+   "5": "IO_C1_Pad1",
+   "6": "TRD1_N",
+   "7": "TRD2_P",
+   "8": "TRD2_N",
+   "9": "TRD3_P"
+  },
+  "sheet": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/",
+  "value": "MagJack-A70-112-331N126"
+ },
+ "U6": {
+  "fields": {
+   "MPN": "AP22653W6",
+   "Manufacturer": "Diodes"
+  },
+  "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+  "lib_id": "CM5IO:AP2553W6",
+  "pins": {
+   "1": "+5V_CM5",
+   "2": "GND",
+   "3": "VBUS_EN",
+   "5": "IO_U6_ILIM",
+   "6": "VBUS"
+  },
+  "sheet": "/CM5_HighSpeed/",
+  "value": "AP22653W6"
+ },
+ "U7": {
+  "fields": {
+   "MPN": "ASEK-32.768KHZ-L-R-T",
+   "Manufacturer": "abracon"
+  },
+  "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+  "lib_id": "CM5IO:ASEK-32.768KHZ-L-R-T",
+  "pins": {
+   "1": "M2_3v3",
+   "2": "GND",
+   "3": "IO_J4_SUSCLK",
+   "4": "M2_3v3"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "ASEK-32.768KHZ-L-R-T"
+ },
+ "U8": {
+  "fields": {
+   "MPN": "AP3441SHE-7B",
+   "Manufacturer": "Diodes"
+  },
+  "footprint": "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.5mm_EP1.05x1.75mm",
+  "lib_id": "CM5IO:AP3441SHE-7B",
+  "pins": {
+   "1": "FB",
+   "3": "+5V_CM5",
+   "4": "GND",
+   "6": "IO_U8_LX",
+   "7": "PCIE_PWR_EN",
+   "8": "GND",
+   "9": "GND"
+  },
+  "sheet": "/PCIe-M2/",
+  "value": "AP3441SHE-7B"
+ }
+}

@@ -13,3 +13,18 @@ path = ["hardware/**", "mechanical/**"]
 precedence = "closest"
 SPDX-FileCopyrightText = "2026 The weft authors"
 SPDX-License-Identifier = "CERN-OHL-P-2.0"
+
+# Raspberry Pi CM5 IO Board design files (revision 2), reused as the base of the carrier:
+# the PCB layout, its symbol and footprint libraries and the circuit imported from it.
+[[annotations]]
+path = ["hardware/base/**", "hardware/lib/CM5IO.kicad_sym", "hardware/lib/CM5IO.pretty/**", "hardware/gen/ioboard.json"]
+precedence = "override"
+SPDX-FileCopyrightText = "2024 Raspberry Pi Ltd"
+SPDX-License-Identifier = "LicenseRef-RaspberryPi-Designs"
+
+# The generated KiCad project contains both the IO Board's circuit and weft's additions.
+[[annotations]]
+path = ["hardware/kicad/**"]
+precedence = "override"
+SPDX-FileCopyrightText = ["2024 Raspberry Pi Ltd", "2026 The weft authors"]
+SPDX-License-Identifier = "CERN-OHL-P-2.0 AND LicenseRef-RaspberryPi-Designs"

@@ -1,2 +1,6 @@
 # Project words the spell checker does not know.
 [default.extend-words]
+
+[files]
+# KiCad data and the imported IO Board circuit: part numbers, not prose.
+extend-exclude = ["hardware/base/", "hardware/lib/", "hardware/kicad/", "hardware/gen/ioboard.json", "target/"]
