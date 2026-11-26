@@ -11,7 +11,7 @@ CM5 IO Board (design, decisions and requirements: weft-design
 |---|---|
 | `gen/carrier.py` | The circuit: the IO Board's circuit, the changes to it, and the new blocks (power, supervisor, USB, GPIO path, control, ESP32, headers) |
 | `gen/ioboard.json` | The IO Board circuit as data, imported once from its netlist (`gen/import_ioboard.py`) |
-| `gen/build.py`, `gen/kicad.py`, `gen/circuit.py` | Writes the schematic: one sheet per block, a net label on every pin |
+| `gen/build.py`, `gen/kicad.py`, `gen/circuit.py` | Writes the schematic: one sheet per block, one framed cluster per chip (passives wired to their pin, decoupling below, power symbols) |
 | `gen/mklib.py` | Symbols and footprints missing from KiCad's libraries (`lib/weft.*`): TPS25947 eFuse |
 | `gen/pcb.py` | The PCB: the IO Board layout, netlist applied, outline extended 110 mm to the right, new parts placed by block, the 5 V power path as zones |
 | `gen/route.py` | Routing with Freerouting; the IO Board's tracks stay locked |
@@ -62,4 +62,4 @@ just drc             # design rule check
 - Pogo pins for the module's test points: positions to be measured on a real CM5 (docs/22 §3.4).
 - The TPS25947 footprint (`lib/weft.pretty`) is drawn from the datasheet's land pattern: check it.
 - STUSB4500 NVM: program PDO1 to 5 V/5 A in bring-up.
-- Schematic sheets put a label on every pin; readable, not pretty.
+- Schematic: chip pins still end in net labels (no wires between chips); search a net name to follow it.

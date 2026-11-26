@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 """Routes the placed board with Freerouting and fills the zones.
 
-    python3 route.py <placed.kicad_pcb> <out.kicad_pcb> [passes]
+    python3 route.py <placed.kicad_pcb> <out.kicad_pcb> [passes [freerouting options...]]
 
 The IO Board's own tracks are locked first, so Freerouting keeps them (its impedance-controlled
 pairs stay as Raspberry Pi routed them) and only connects what is new or changed.
@@ -15,7 +15,7 @@ import tempfile
 
 import pcbnew
 
-def main(src, out, passes="40"):
+def main(src, out, passes="40", *extra):
     board = pcbnew.LoadBoard(src)
     for t in board.GetTracks():
         t.SetLocked(True)
@@ -29,7 +29,7 @@ def main(src, out, passes="40"):
     if not pcbnew.ExportSpecctraDSN(board, dsn):
         raise SystemExit("DSN export failed")
     # Net classes and clearances come from the project file (.kicad_pro next to the board).
-    cmd = ["freerouting", "-de", dsn, "-do", ses, "-mp", passes, "--gui.enabled=false"]
+    cmd = ["freerouting", "-de", dsn, "-do", ses, "-mp", passes, "--gui.enabled=false", *extra]
     print("running:", " ".join(cmd), flush=True)
     subprocess.run(cmd, check=True)
     if not pcbnew.ImportSpecctraSES(board, ses):

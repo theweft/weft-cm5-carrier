@@ -34,3 +34,11 @@ route passes="30": place
 drc:
     mkdir -p target
     kicad-cli pcb drc --schematic-parity --severity-all -o target/drc.rpt hardware/kicad/weft-cm5-carrier.kicad_pcb
+
+# Routes several variants in parallel (different pass counts) into target/route-<passes>.kicad_pcb;
+# compare them with `just compare-routes` and keep the best.
+route-many *passes="3 6 12 25":
+    for p in {{passes}}; do \
+      cp target/placed.kicad_pro target/route-$p.kicad_pro; \
+      nice -n 10 python3 hardware/gen/route.py target/placed.kicad_pcb target/route-$p.kicad_pcb $p > target/route-$p.log 2>&1 & \
+    done; wait
