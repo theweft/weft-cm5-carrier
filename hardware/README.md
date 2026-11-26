@@ -39,7 +39,7 @@ just drc             # design rule check
 
 ## New blocks
 
-- **Supervisor:** RP2350B, 16 Mbit flash, 12 MHz crystal, SWD header (Raspberry Pi Debug Probe),
+- **Supervisor:** RP2350B, 16 Mbit flash, 12 MHz crystal, SWD on the Raspberry Pi 3-pin JST-SH debug connector (the Debug Probe stays plugged in),
   BOOTSEL and RESET buttons. GPIO0..27 face the CM5's GPIO0..27 one to one.
 - **GPIO path:** four LSF0108 for the 28 GPIOs (RefA = GPIO_VREF, so 3.3 V and 1.8 V banks), two
   for status pins; all off unless the supervisor enables them *and* the CM5's 3.3 V is up (R5).

@@ -191,10 +191,12 @@ def supervisor(c):
     # USB to hub port 1.
     c.R("27", "SUP_USB_DP_R", "HUB_DN1_P")
     c.R("27", "SUP_USB_DM_R", "HUB_DN1_N")
-    # SWD (Raspberry Pi Debug Probe: 3-pin), I2C pull-ups, interrupt, status LED.
-    c.part("Connector_Generic:Conn_01x03", "SWD", prefix="J",
-           footprint="Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical").connect(
-        **{"1": "SUP_SWCLK", "2": "GND", "3": "SUP_SWDIO"})
+    # SWD: Raspberry Pi 3-pin debug connector (JST-SH, pin 1 SWCLK, 2 GND, 3 SWDIO), so the Debug
+    # Probe's latching JST cable stays plugged in for remote recovery of the supervisor.
+    c.part("Connector_Generic_MountingPin:Conn_01x03_MountingPin", "SWD", prefix="J",
+           footprint="Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal",
+           MPN="SM03B-SRSS-TB(LF)(SN)").connect(
+        **{"1": "SUP_SWCLK", "2": "GND", "3": "SUP_SWDIO", "MP": "GND"})
     c.R("2.2k", "SUP_SDA", SUP)
     c.R("2.2k", "SUP_SCL", SUP)
     c.R("10k", "SUP_nINT", SUP)

@@ -3491,8 +3491,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b349101f-b0ed-5cf2-a321-08a0ff88e686")
-		(property "Reference" "#PWR0470"
+		(uuid "1c532f61-ae3f-51bb-808f-e24c2f3fad5b")
+		(property "Reference" "#PWR0471"
 			(at 45.72 83.82 0)
 			(effects
 				(font
@@ -3530,12 +3530,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "47313792-2401-54fb-85a2-9bb1f233eb40")
+			(uuid "2809c83d-334a-5486-bc1b-cebc4a2ec941")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0470")
+					(reference "#PWR0471")
 					(unit 1)
 				)
 			)
@@ -3549,8 +3549,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1c532f61-ae3f-51bb-808f-e24c2f3fad5b")
-		(property "Reference" "#PWR0471"
+		(uuid "05a1b879-87be-5f59-ac42-4951d0e0474d")
+		(property "Reference" "#PWR0472"
 			(at 58.42 83.82 0)
 			(effects
 				(font
@@ -3588,12 +3588,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2809c83d-334a-5486-bc1b-cebc4a2ec941")
+			(uuid "e67de4d2-2523-5f69-ada6-837502414250")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0471")
+					(reference "#PWR0472")
 					(unit 1)
 				)
 			)
@@ -3607,8 +3607,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "05a1b879-87be-5f59-ac42-4951d0e0474d")
-		(property "Reference" "#PWR0472"
+		(uuid "6dba9fe1-5a95-5782-884f-62a45b3e86cc")
+		(property "Reference" "#PWR0473"
 			(at 45.72 86.36 0)
 			(effects
 				(font
@@ -3646,12 +3646,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e67de4d2-2523-5f69-ada6-837502414250")
+			(uuid "13363412-d0c3-54f8-bda9-d0f2aa0f0a0d")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0472")
+					(reference "#PWR0473")
 					(unit 1)
 				)
 			)
@@ -3665,8 +3665,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6dba9fe1-5a95-5782-884f-62a45b3e86cc")
-		(property "Reference" "#PWR0473"
+		(uuid "e5403498-5f10-58cf-adf1-3f6eb9198a69")
+		(property "Reference" "#PWR0474"
 			(at 58.42 86.36 0)
 			(effects
 				(font
@@ -3704,12 +3704,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "13363412-d0c3-54f8-bda9-d0f2aa0f0a0d")
+			(uuid "4d8c458a-ddb5-5486-9c78-c2d300cf4831")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0473")
+					(reference "#PWR0474")
 					(unit 1)
 				)
 			)
@@ -4156,8 +4156,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e5403498-5f10-58cf-adf1-3f6eb9198a69")
-		(property "Reference" "#PWR0474"
+		(uuid "feb5d01b-b8a4-5709-8ab6-9560472a023a")
+		(property "Reference" "#PWR0475"
 			(at 106.68 55.88 0)
 			(effects
 				(font
@@ -4195,12 +4195,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4d8c458a-ddb5-5486-9c78-c2d300cf4831")
+			(uuid "1d4f2d44-c278-5c56-93bd-66b6205a55e7")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0474")
+					(reference "#PWR0475")
 					(unit 1)
 				)
 			)
@@ -4214,8 +4214,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "feb5d01b-b8a4-5709-8ab6-9560472a023a")
-		(property "Reference" "#PWR0475"
+		(uuid "27e2935b-fcfc-519f-89b0-46ac05a2244c")
+		(property "Reference" "#PWR0476"
 			(at 119.38 55.88 0)
 			(effects
 				(font
@@ -4253,12 +4253,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d4f2d44-c278-5c56-93bd-66b6205a55e7")
+			(uuid "2b88bbeb-3e2f-5352-bb08-e44ed740d1b4")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0475")
+					(reference "#PWR0476")
 					(unit 1)
 				)
 			)
@@ -4272,8 +4272,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "27e2935b-fcfc-519f-89b0-46ac05a2244c")
-		(property "Reference" "#PWR0476"
+		(uuid "8fb91f73-ae0a-58c8-8ed7-432557133b0f")
+		(property "Reference" "#PWR0477"
 			(at 106.68 58.42 0)
 			(effects
 				(font
@@ -4311,12 +4311,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2b88bbeb-3e2f-5352-bb08-e44ed740d1b4")
+			(uuid "5fc20504-bcee-59bb-b5b3-91a88ce28ebe")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0476")
+					(reference "#PWR0477")
 					(unit 1)
 				)
 			)
@@ -4330,8 +4330,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8fb91f73-ae0a-58c8-8ed7-432557133b0f")
-		(property "Reference" "#PWR0477"
+		(uuid "f275ad83-0c26-512d-9ad2-f275abe1478c")
+		(property "Reference" "#PWR0478"
 			(at 119.38 58.42 0)
 			(effects
 				(font
@@ -4369,12 +4369,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5fc20504-bcee-59bb-b5b3-91a88ce28ebe")
+			(uuid "8e4de6aa-eaf9-525d-b2dd-0e8feef1f1d4")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0477")
+					(reference "#PWR0478")
 					(unit 1)
 				)
 			)
@@ -4388,8 +4388,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f275ad83-0c26-512d-9ad2-f275abe1478c")
-		(property "Reference" "#PWR0478"
+		(uuid "e1bea711-d12a-5163-a46b-55647808f8d3")
+		(property "Reference" "#PWR0479"
 			(at 106.68 60.96 0)
 			(effects
 				(font
@@ -4427,12 +4427,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8e4de6aa-eaf9-525d-b2dd-0e8feef1f1d4")
+			(uuid "6afe5952-6aa1-5695-9fb8-507b1289438f")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0478")
+					(reference "#PWR0479")
 					(unit 1)
 				)
 			)
@@ -4446,8 +4446,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e1bea711-d12a-5163-a46b-55647808f8d3")
-		(property "Reference" "#PWR0479"
+		(uuid "8eea15eb-b2a8-56ce-9089-f8805add2500")
+		(property "Reference" "#PWR0480"
 			(at 119.38 60.96 0)
 			(effects
 				(font
@@ -4485,12 +4485,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6afe5952-6aa1-5695-9fb8-507b1289438f")
+			(uuid "928e2d45-b0fe-51ee-af51-e9f685fea510")
 		)
 		(instances
 			(project "weft-cm5-carrier"
 				(path "/81feb17c-565f-5de3-83fe-e81afbecacd4/6b533fc1-2beb-586e-8a2b-4da0465d4143"
-					(reference "#PWR0479")
+					(reference "#PWR0480")
 					(unit 1)
 				)
 			)

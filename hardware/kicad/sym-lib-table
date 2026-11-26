@@ -6,6 +6,7 @@
 	(lib (name "Analog_Switch")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Analog_Switch.kicad_sym")(options "")(descr ""))
 	(lib (name "Connector")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")(options "")(descr ""))
 	(lib (name "Connector_Generic")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym")(options "")(descr ""))
+	(lib (name "Connector_Generic_MountingPin")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic_MountingPin.kicad_sym")(options "")(descr ""))
 	(lib (name "Device")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")(options "")(descr ""))
 	(lib (name "Diode")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Diode.kicad_sym")(options "")(descr ""))
 	(lib (name "Interface_Expansion")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Interface_Expansion.kicad_sym")(options "")(descr ""))
