@@ -258,7 +258,7 @@ def improve(board, fps, auto, moves=int(os.environ.get("ANNEAL_MOVES", "600000")
         fp.SetPosition(pcbnew.VECTOR2I(MM(x0), MM(y0)))
         many = fp.GetPadCount() > 4
         parts.append(anneal.Part(ref, shapes, region, x0, y0, int(round(rot0)) % 360, fp.GetFPIDAsString(),
-                                 margin=1.0 if many else 0.3))
+                                 margin=1.5 if many else 0.5))
     fixed_pads, obstacles = [], []
     for ref, fp in fps.items():
         if ref in auto_set:
